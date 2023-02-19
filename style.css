@@ -127,17 +127,41 @@ body{
   background-color: var(--terciary);
 }
 
-#inicio{
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+}
+
+.box-one{
   display: flex;
   justify-content: space-around;
   align-items: center;
   color:var(--primary);
-  height: 95vh;
+  padding: 100px 0px;
 }
 
 .name{
   font-size: 50px;
   font-weight: 100;
+}
+
+.box-two{
+  color:var(--primary);
+  letter-spacing: .1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.box-two p{
+  margin: 15px;
+  width: 800px;
 }
 
 .botons{
@@ -162,37 +186,20 @@ img{
   border-radius: 100%;
 }
 
-@media(max-width:800px){
-  #inicio{
+@media(max-width:840px){
+  .box-one{
     display: flex;
-    justify-content: space-around;
     flex-direction: column-reverse;
-    text-align: center;
   }
-  .inicio-rigth{
-    
+  
+  .box-two p{
+    margin: 15px;
+    width: 400px; 
   }
-
 }
 /*---------- SECTION/SOBRE ----------*/
 
-#sobre{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 95vh;
-}
 
-.text-left{
-  width: 500px;
-  height: 200px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  
-}
 
 /*---------- SECTION/PROJETOS ----------*/
 
