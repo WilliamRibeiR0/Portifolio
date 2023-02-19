@@ -60,6 +60,7 @@ li{
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
+    overflow-x: hidden;
   }
   .navList li{
     margin-left: 0;
@@ -72,7 +73,7 @@ li{
 
 .navList.active{
   transform: translateX(0);
-
+  
 }
 
 @keyframes navLinkFade {
