@@ -5,12 +5,12 @@
 }
 
 :root{
-  --links: #fff;
-  --secondary:#2e3440;
-  --terciary:  #292e39;
+  --primary: #f0f8ff;
+  --secondary: #292e39;
+  --terciary: #2e3440;
   --:k#434c5e;
   --:s#4c566a;
-  --button:#88c0d0;
+  --button:#598f9e;
 }
 
 /*---------- HEADER ----------*/
@@ -25,7 +25,7 @@ nav{
 
 a{
   text-decoration: none;
-  color: var(--links);
+  color: var(--primary);
   letter-spacing: .2rem;/*da espaço entre as letras*/
   
 }
@@ -104,7 +104,7 @@ li{
 .mobileMenu div{
   width:32px;
   height: 2px;
-  background-color: var(--links);
+  background-color: var(--primary);
   margin: 8px;
   transition: 0.3s;
 }
@@ -127,7 +127,72 @@ body{
   background-color: var(--terciary);
 }
 
+#inicio{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color:var(--primary);
+  height: 95vh;
+}
+
+.name{
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.botons{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.botons-left, .boton-rigth{
+  background-color: var(--button);
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  border-radius: 100%;
+}
+
+@media(max-width:800px){
+  #inicio{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .inicio-rigth{
+    
+  }
+
+}
 /*---------- SECTION/SOBRE ----------*/
+
+#sobre{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 95vh;
+}
+
+.text-left{
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
 
 /*---------- SECTION/PROJETOS ----------*/
 
