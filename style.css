@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--primary);
 }
 
 :root{
@@ -156,12 +157,13 @@ body{
   justify-content: space-around;
   height: auto;
   text-align: center;
-  padding-top: 90px;
+  padding: 200px;
 }
 
 .box-two p{
   margin: 15px;
   width: 800px;
+  line-height: 1.5rem;
 }
 
 .botons{
@@ -182,7 +184,7 @@ body{
   justify-content: center;
 }
 
-img{
+.inicio-rigth img{
   border-radius: 100%;
 }
 
@@ -197,10 +199,20 @@ img{
     width: 400px; 
   }
 }
-/*---------- SECTION/SOBRE ----------*/
-
-
-
 /*---------- SECTION/PROJETOS ----------*/
+
+.jobs{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card-jobs{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 10px;
+}
+
 
 /*---------- SECTION/CONTATO ----------*/
