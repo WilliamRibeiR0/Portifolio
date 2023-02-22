@@ -22,6 +22,8 @@ nav{
   align-items: center;
   background-color: var(--secondary);
   height: 70px;
+  position: fixed;
+  width: 100%;
 }
 
 a{
@@ -124,6 +126,16 @@ li{
 
 /*---------- SECTION/INICIO ----------*/
 
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section{
+  height: 100vh;
+}
+
 body{
   background-color: var(--terciary);
 }
@@ -134,7 +146,6 @@ body{
   margin: auto;
   align-items: center;
   justify-content: space-around;
-  
 }
 
 .box-one{
@@ -143,7 +154,7 @@ body{
   align-items: center;
   color:var(--primary);
   padding: 100px 0px;
-  width: 90%;
+  width: 100%;
 }
 
 .name{
@@ -160,7 +171,6 @@ body{
   justify-content: space-around;
   height: auto;
   text-align: center;
-  padding: 200px;
 }
 
 .box-two p{
@@ -202,7 +212,7 @@ body{
   
   .box-two p{
     margin: 15px;
-    width: 400px; 
+    width: 100%; 
   }
 }
 /*---------- SECTION/PROJETOS ----------*/
@@ -210,10 +220,10 @@ body{
 .jobs{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin: 15px;
   align-items: center;
   justify-content: space-around;
-  
+  width: 100%;
 }
 
 .card-jobs{
