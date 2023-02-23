@@ -126,14 +126,17 @@ li{
 
 /*---------- SECTION/INICIO ----------*/
 
+
 main{
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 100px;
 }
 
-section{
-  
+.inicio-left{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 body{
@@ -146,6 +149,7 @@ body{
   margin: auto;
   align-items: center;
   justify-content: space-around;
+  
 }
 
 .box-one{
@@ -172,6 +176,7 @@ body{
   justify-content: space-around;
   height: auto;
   text-align: center;
+  gap: 20px;
 }
 
 .box-two p{
@@ -184,18 +189,17 @@ body{
   display: flex;
   justify-content: space-around;
   margin: 20px;
-}
-
-.botons-left, .boton-rigth{
   background-color: var(--button);
   width: 150px;
   height: 35px;
   border-radius: 10px;
-  margin-right: 10px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.botons-left, .boton-rigth{
+  
 }
 
 .inicio-rigth img{
@@ -215,8 +219,15 @@ body{
     margin: 15px;
     width: 100%; 
   }
+
+  .inicio-left{
+    width: 100%;
+    text-align: center;
+  }
 }
 /*---------- SECTION/PROJETOS ----------*/
+
+
 
 .jobs{
   display: flex;
@@ -236,4 +247,32 @@ body{
 
 
 
-/*---------- SECTION/CONTATO ----------*/
+/*---------- footer/CONTATO ----------*/
+
+footer{
+  background-color: var(--secondary);
+  margin-top: 20px;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 200px;
+  width: 100%;
+  
+}
+
+.icon{
+  text-align: center;
+  
+}
+
+.icon p{
+  margin: 10px;
+}
+
+footer h1{
+  text-align: center;
+}
